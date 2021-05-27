@@ -18,8 +18,8 @@ app.get('/', function (req, res){
     res.render('index', {title: 'Account Summary', accounts});
 });
 
-app.get('/savings', (req, res) => res.render('account', {account: account.savings}));
-app.get('/checking', (req, res) => res.render('account', {account: account.checking}));
-app.get('/credit', (req, res) => res.render('account', {account: account.credit}));
+app.get('/savings', (req, res) => res.render('account', {account: accounts.savings}));
+app.get('/checking', (req, res) => res.render('account', {account: accounts.checking}));
+app.get('/credit', (req, res) => res.render('account', {account: accounts.credit}));
 
 app.listen(3000, () => console.log('PS project running on port 3000!'));
